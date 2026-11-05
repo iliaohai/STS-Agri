@@ -1,0 +1,201 @@
+Question1,Question2,Similarity,Category
+How much fertilizer do tomatoes need?,What is the recommended fertilizer amount for tomatoes?,1,Fertilization
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How to improve soil fertility?,How to control pests in crops?,0,Pest Control
+How to improve soil fertility?,How to control pests in crops?,0,Irrigation
+How does rainfall affect crops?,What causes plant diseases?,0,Plant Growth
+What is the best irrigation method?,How to fertilize corn properly?,0,Plant Growth
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+How to improve soil fertility?,How to control pests in crops?,0,Weather
+How to prevent pest infestation in vegetables?,What are ways to avoid pests in vegetable farming?,1,Pest Control
+What causes soil degradation?,What are the reasons for soil degradation?,1,Soil
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Soil
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+What is the best irrigation method?,How to fertilize corn properly?,0,Irrigation
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Crop Disease
+How does rainfall affect crops?,What causes plant diseases?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Pest Control
+How does rainfall affect crops?,What causes plant diseases?,0,Fertilization
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Pest Control
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Harvest
+When is the right time to harvest corn?,What is the optimal harvest time for corn?,1,Harvest
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+How much fertilizer do tomatoes need?,What is the recommended fertilizer amount for tomatoes?,1,Fertilization
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Weather
+How does rainfall affect crops?,What causes plant diseases?,0,Crop Disease
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+How to improve soil fertility?,How to control pests in crops?,0,Soil
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+How to improve soil fertility?,How to control pests in crops?,0,Fertilization
+How to improve soil fertility?,How to control pests in crops?,0,Irrigation
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Irrigation
+How much fertilizer do tomatoes need?,What is the recommended fertilizer amount for tomatoes?,1,Fertilization
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+What is the best irrigation method?,How to fertilize corn properly?,0,Soil
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Weather
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Soil
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+How to improve soil fertility?,How to control pests in crops?,0,Fertilization
+What causes soil degradation?,What are the reasons for soil degradation?,1,Soil
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+How much fertilizer do tomatoes need?,What is the recommended fertilizer amount for tomatoes?,1,Fertilization
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+How much fertilizer do tomatoes need?,What is the recommended fertilizer amount for tomatoes?,1,Fertilization
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How to improve soil fertility?,How to control pests in crops?,0,Weather
+What is the best irrigation method?,How to fertilize corn properly?,0,Pest Control
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+How to improve soil fertility?,How to control pests in crops?,0,Weather
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Pest Control
+How to improve soil fertility?,How to control pests in crops?,0,Irrigation
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+What is the best irrigation method?,How to fertilize corn properly?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Plant Growth
+How does rainfall affect crops?,What causes plant diseases?,0,Pest Control
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+How to improve soil fertility?,How to control pests in crops?,0,Plant Growth
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+When is the right time to harvest corn?,What is the optimal harvest time for corn?,1,Harvest
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Soil
+Why are rice leaves turning yellow?,What causes yellowing in rice leaves?,1,Crop Disease
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Crop Disease
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+What is the best irrigation method?,How to fertilize corn properly?,0,Harvest
+What is the best irrigation method?,How to fertilize corn properly?,0,Harvest
+How to improve soil fertility?,How to control pests in crops?,0,Pest Control
+How to improve soil fertility?,How to control pests in crops?,0,Fertilization
+When is the right time to harvest corn?,What is the optimal harvest time for corn?,1,Harvest
+How to control aphids in crops?,What methods can remove aphids from plants?,1,Pest Control
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+What is the best irrigation method?,How to fertilize corn properly?,0,Pest Control
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Plant Growth
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+What is the best irrigation method?,How to fertilize corn properly?,0,Crop Disease
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+What is the best irrigation method?,How to fertilize corn properly?,0,Harvest
+When is the right time to harvest corn?,What is the optimal harvest time for corn?,1,Harvest
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+How to control aphids in crops?,What methods can remove aphids from plants?,1,Pest Control
+How to improve soil fertility?,How to control pests in crops?,0,Crop Disease
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Weather
+How to improve soil fertility naturally?,What natural methods enhance soil fertility?,1,Soil
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Harvest
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+How to promote faster plant growth?,What helps plants grow more quickly?,1,Plant Growth
+Why are rice leaves turning yellow?,What causes yellowing in rice leaves?,1,Crop Disease
+How does rainfall affect crops?,What causes plant diseases?,0,Irrigation
+What is the best irrigation method?,How to fertilize corn properly?,0,Plant Growth
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Irrigation
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+What is the best irrigation method?,How to fertilize corn properly?,0,Plant Growth
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Crop Disease
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Irrigation
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+How to control aphids in crops?,What methods can remove aphids from plants?,1,Pest Control
+How to improve soil fertility?,How to control pests in crops?,0,Soil
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+How does rainfall affect crops?,What causes plant diseases?,0,Crop Disease
+What causes soil degradation?,What are the reasons for soil degradation?,1,Soil
+How to prevent pest infestation in vegetables?,What are ways to avoid pests in vegetable farming?,1,Pest Control
+How does rainfall affect crops?,What causes plant diseases?,0,Pest Control
+When should I apply nitrogen to corn?,What is the best time to add nitrogen fertilizer to corn?,1,Fertilization
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Harvest
+How much fertilizer do tomatoes need?,What is the recommended fertilizer amount for tomatoes?,1,Fertilization
+How to prevent pest infestation in vegetables?,What are ways to avoid pests in vegetable farming?,1,Pest Control
+What is the best irrigation method?,How to fertilize corn properly?,0,Pest Control
+What is the best irrigation method?,How to fertilize corn properly?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Fertilization
+How to improve soil fertility?,How to control pests in crops?,0,Harvest
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+What is the best irrigation method?,How to fertilize corn properly?,0,Harvest
+How does rainfall affect crops?,What causes plant diseases?,0,Pest Control
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+What is the best irrigation method?,How to fertilize corn properly?,0,Irrigation
+What causes soil degradation?,What are the reasons for soil degradation?,1,Soil
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Weather
+How to improve soil fertility?,How to control pests in crops?,0,Crop Disease
+How to prevent pest infestation in vegetables?,What are ways to avoid pests in vegetable farming?,1,Pest Control
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+How to promote faster plant growth?,What helps plants grow more quickly?,1,Plant Growth
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Crop Disease
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Soil
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Pest Control
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Pest Control
+How does rainfall affect crops?,What causes plant diseases?,0,Fertilization
+How to prevent pest infestation in vegetables?,What are ways to avoid pests in vegetable farming?,1,Pest Control
+How does rainfall affect crops?,What causes plant diseases?,0,Crop Disease
+How to improve soil fertility?,How to control pests in crops?,0,Irrigation
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+How does rainfall affect crops?,What causes plant diseases?,0,Fertilization
+What is the best irrigation method?,How to fertilize corn properly?,0,Fertilization
+What is the best irrigation method?,How to fertilize corn properly?,0,Fertilization
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+How to control aphids in crops?,What methods can remove aphids from plants?,1,Pest Control
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+How does drought affect crop yield?,What impact does drought have on crop production?,1,Weather
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+How does rainfall affect crops?,What causes plant diseases?,0,Pest Control
+What is the best irrigation method?,How to fertilize corn properly?,0,Harvest
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+How to promote faster plant growth?,What helps plants grow more quickly?,1,Plant Growth
+How to improve soil fertility?,How to control pests in crops?,0,Crop Disease
+How often should crops be irrigated?,What is the irrigation frequency for crops?,1,Irrigation
+How does rainfall affect crops?,What causes plant diseases?,0,Plant Growth
+How to improve soil fertility?,How to control pests in crops?,0,Plant Growth
+How to improve soil fertility?,How to control pests in crops?,0,Fertilization
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+What causes soil degradation?,What are the reasons for soil degradation?,1,Soil
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Plant Growth
+How to promote faster plant growth?,What helps plants grow more quickly?,1,Plant Growth
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+Why are rice leaves turning yellow?,What causes yellowing in rice leaves?,1,Crop Disease
+What causes soil degradation?,What are the reasons for soil degradation?,1,Soil
+How to improve soil fertility?,How to control pests in crops?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Fertilization
+How does rainfall influence plant growth?,What is the effect of rain on plant growth?,1,Weather
+How to prevent pest infestation in vegetables?,What are ways to avoid pests in vegetable farming?,1,Pest Control
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Fertilization
+How does rainfall affect crops?,What causes plant diseases?,0,Harvest
+How does rainfall affect crops?,What causes plant diseases?,0,Crop Disease
+How much water do rice fields require?,What is the water requirement for rice cultivation?,1,Irrigation
+What is the best irrigation method?,How to fertilize corn properly?,0,Plant Growth
+How to improve soil fertility?,How to control pests in crops?,0,Weather
+What is the best irrigation method?,How to fertilize corn properly?,0,Plant Growth
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Soil
+How to know if wheat is ready for harvest?,What indicates wheat is ready to be harvested?,1,Harvest
+How to treat leaf blight in wheat?,What is the treatment for wheat leaf blight?,1,Crop Disease
+What factors affect plant growth?,Which factors influence plant development?,1,Plant Growth
+How to improve soil fertility?,How to control pests in crops?,0,Soil
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Weather
+How to improve soil fertility?,How to control pests in crops?,0,Plant Growth
+Why are rice leaves turning yellow?,What causes yellowing in rice leaves?,1,Crop Disease
+Why are rice leaves turning yellow?,When should wheat be harvested?,0,Weather

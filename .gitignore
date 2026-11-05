@@ -1,4 +1,4 @@
-# Keep directory structure but exclude all local assets.
+# Exclude local assets; publish only the STS-Agri dataset.
 /dataset/**/*
 !/dataset/**/
 !/dataset/**/.gitkeep
@@ -38,3 +38,6 @@ __pycache__/
 *.log
 *.zip
 *.tar.gz
+
+# Public dataset proposed by the authors
+!/dataset/STS-Agri/STS-Agri.csv
