@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite the STSG paper using references.bib."
+title: "STS-Agri: STSG research code"
+type: software
+authors:
+  - family-names: Liao
+    given-names: Hai
+repository-code: "https://github.com/iliaohai/STS-Agri"
+preferred-citation:
+  type: article
+  title: "STSG: A Short Text Semantic Graph Model for Similarity Computing Based on Dependency Parsing and Pre-trained Language Models"
+  authors:
+    - {family-names: Liao, given-names: Hai}
+    - {family-names: Liang, given-names: Yan}
+    - {family-names: Chen, given-names: Song}
+    - {family-names: Xiang, given-names: Lingyun}
+    - {family-names: Chang, given-names: Zhimin}
+    - {family-names: Xiao, given-names: Yun}
+  journal: Applied Artificial Intelligence
+  volume: "38"
+  issue: "1"
+  start: "2321552"
+  year: 2024
+  doi: 10.1080/08839514.2024.2321552

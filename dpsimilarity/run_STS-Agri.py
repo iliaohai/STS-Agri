@@ -1,0 +1,164 @@
+import pandas as pd
+from transformers import AdamW
+from torch import nn
+import torch
+from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sklearn.metrics import f1_score
+from sklearn.metrics import mean_squared_error  # 均方误差
+from sklearn.metrics import mean_absolute_error  # 平方绝对误差
+from model import DPsimilarityModel
+import time
+from util.logutil import Logger
+from sklearn.model_selection import train_test_split
+
+# 记录日志
+filename = "../output/dpsimilarity/run_STS-Agri"
+time_stamp = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
+filepath = filename + "_" + time_stamp + ".log"
+log = Logger(filepath, level='debug')
+
+'''
+    0.Create model
+'''
+dpsimilarityModel = DPsimilarityModel().cuda()
+
+'''
+    1.Load dateset
+'''
+# 读取完整数据集
+full_dataset = pd.read_csv('../dataset/STS-Agri/STS-Agri.csv', header=0)
+
+# 第一步：划分训练集（70%）和临时集（30%）
+train_set, temp_set = train_test_split(
+    full_dataset,
+    test_size=0.3,
+    random_state=42,
+    shuffle=True
+)
+
+# 第二步：从临时集中再划分验证集（20%）和测试集（10%）
+dev_set, test_set = train_test_split(
+    temp_set,
+    test_size=1/3,   # temp_set 的 1/3 是 10%，2/3 是 20%
+    random_state=42,
+    shuffle=True
+)
+
+# 查看划分结果
+print("Train:", len(train_set))
+print("Dev:", len(dev_set))
+print("Test:", len(test_set))
+
+# train
+train_inputs = [train_set['Question1'].values, train_set['Question2'].values]  # train input
+train_targets = train_set['Similarity'].values  # train label
+# dev
+dev_inputs = [dev_set['Question1'].values, dev_set['Question2'].values]
+dev_targets = dev_set['Similarity'].values
+# test
+test_inputs = [test_set['Question1'].values, test_set['Question2'].values]
+# test_targets = test_set['Quality'].values
+
+'''
+    2.Set batch
+'''
+batch_size = 32
+batch_count = int(len(train_inputs[0]) / batch_size)
+batch_train_inputs, batch_train_targets = [], []
+sentences1, sentences2 = train_inputs[0], train_inputs[1]  # 第一个句子的所有列数组, 第二个句子的所有列数组
+for i in range(batch_count):
+    j = i * batch_size
+    batch_sentences = []
+    while j < (i+1) * batch_size:
+        batch_sentences.append('[CLS]' + sentences1[j] + '[SEP]' + sentences2[j] + '[SEP]')
+        j = j + 1
+    batch_train_inputs.append(batch_sentences)
+    batch_train_targets.append(train_targets[i*batch_size: (i+1)*batch_size])
+
+'''
+    3.Train model
+'''
+epochs = 5000
+lr = 0.01
+print_every_batch = 1
+# optimizer = optim.SGD(bert_classifier_model.parameters(), lr=lr, momentum=0.9)
+optimizer = AdamW(dpsimilarityModel.parameters(), lr=2e-5)
+criterion = nn.CrossEntropyLoss()
+# 记录最好结果
+max_acc, max_f1, max_p, max_r, best_epoch = 0.0, 0.0, 0.0, 0.0, 0
+for epoch in range(epochs):
+    print_avg_loss = 0
+    dpsimilarityModel.train()
+    for i in range(batch_count):
+        # 正向传播
+        inputs = batch_train_inputs[i]  # inputs中有64条训练数据
+        labels = batch_train_targets[i]  # labels中有64条标签
+        labels = torch.tensor(labels).cuda()
+        optimizer.zero_grad()
+        outputs = dpsimilarityModel(inputs).cuda()
+        loss = criterion(outputs, labels)
+        print_avg_loss += loss.item()
+
+        # 反向梯度信息
+        loss.backward()
+        torch.nn.utils.clip_grad_norm_(dpsimilarityModel.parameters(), 1.0)
+        optimizer.step()
+
+        if i % print_every_batch == (print_every_batch - 1):
+            log.logger.info("epoch:%d" % epoch)
+            log.logger.info("Batch: %d, Loss: %.4f" % ((i + 1), print_avg_loss / print_every_batch))
+            print_avg_loss = 0
+
+    '''
+        4.Eval model
+    '''
+    dpsimilarityModel.eval()
+    total = len(dev_targets)
+    y_pred = []
+    y_true = []
+    with torch.no_grad():
+        for j in range(total):
+            dev_strs1, dev_strs2 = dev_inputs[0], dev_inputs[1]
+            dev_input = "[CLS]" + dev_strs1[j] + "[SEP]" + dev_strs2[j] + "[SEP]"
+            outputs = dpsimilarityModel([dev_input])  # 此处需要传数组，所以加一个[]
+            logits = outputs
+            y_pred.append(torch.argmax(logits, axis=1)[0].item())
+            y_true.append(dev_targets[j])
+
+    print(y_true)
+    print(y_pred)
+    f1score = f1_score(y_true, y_pred)
+    acc = accuracy_score(y_true, y_pred)
+    precision = precision_score(y_true, y_pred, average='macro')  # 0.2222222222222222
+    recall = recall_score(y_true, y_pred, average='macro')
+    mse = mean_squared_error(y_true, y_pred)
+    mae = mean_absolute_error(y_true, y_pred)
+    log.logger.info("***************** Result ******************")
+    log.logger.info("epoch:%d" % epoch)
+    log.logger.info("Accuracy:%s" % acc)
+    log.logger.info("F1:%s" % f1score)
+    log.logger.info("precision:%s" % precision)
+    log.logger.info("recall:%s" % recall)
+    log.logger.info("mse:%s" % mse)
+    log.logger.info("mae:%s" % mae)
+    if (acc + f1score)/2 > (max_acc + max_f1) / 2:
+        max_acc, max_f1, max_p, max_r, best_epoch = acc, f1score, precision, recall, epoch
+        result = pd.DataFrame({'y_true': y_true, 'y_pred': y_pred})
+        result.to_csv('../output/dpsimilarity/run_mrpc_result.csv', index=False)
+
+    log.logger.info("max_accuracy:%s" % max_acc)
+    log.logger.info("max_f1:%s" % max_f1)
+    log.logger.info("max_p:%s" % max_p)
+    log.logger.info("max_r:%s" % max_r)
+    log.logger.info("best_epoch:%d" % best_epoch)
+    log.logger.info("******************************************")
+
+    # # 绘制roc图
+    # Roc_figure.plot_ROC(y_true, y_pred, "(a) ROC based on HDFS dataset")
+
+    # 导出预测结果
+    # result = pd.DataFrame({'y_true': y_true, 'y_pred': y_pred})
+    # result.to_csv('../../../Dataset/HDFS/result_BERT-Log.csv', index=False)
+
+
+
