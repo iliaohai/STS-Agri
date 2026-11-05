@@ -56,12 +56,20 @@ python run_STS-Agri.py
 
 The STS-Agri script splits the data approximately 70/20/10 with seed 42. Defaults are batch size 32, 5,000 epochs, and AdamW learning rate `2e-5`; reduce epochs for an initial check. Logs and validation predictions are written to `output/dpsimilarity/`. The prediction filename is historically `run_mrpc_result.csv`.
 
-## Reproduction notes
-
-Python syntax has been checked; full training and paper results have not been reproduced. The original implementation recreates the GAT during each forward call and transfers features through NumPy, so the GAT branch is not trained end to end with the PyTorch encoder. The STS-Agri entry point evaluates the validation set, does not perform final test evaluation, and does not save model checkpoints. STS-Agri is included as an additional experiment; its results should not be assumed to appear in the linked paper.
-
 ## Citation
 
-Please cite the STSG paper using [`references.bib`](references.bib), citation key `liao2024stsg`. GitHub citation metadata is available in [`CITATION.cff`](CITATION.cff).
+```bibtex
+@article{liao2024stsg,
+  title = {{STSG}: A Short Text Semantic Graph Model for Similarity Computing Based on Dependency Parsing and Pre-trained Language Models},
+  author = {Liao, Hai and Liang, Yan and Chen, Song and Xiang, Lingyun and Chang, Zhimin and Xiao, Yun},
+  journal = {Applied Artificial Intelligence},
+  volume = {38},
+  number = {1},
+  pages = {2321552},
+  year = {2024},
+  doi = {10.1080/08839514.2024.2321552},
+  url = {https://doi.org/10.1080/08839514.2024.2321552}
+}
+```
 
 Baidu copyright and Apache-2.0 notices in `graph.py` and `gnn.py` are preserved. No repository-wide license was supplied with the source.
